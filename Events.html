@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Events</title>
+    <link rel="stylesheet" href="Events.css">
+    <!-- <link href="https://fonts.googleapis.com/css?family=Dosis:600&display=swap" rel="stylesheet"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="both">
+        <div class="abt">Events</div>
+        <div class="sec2">
+            <ul class="ul1" style="list-style-type:none">
+                <li class="li1"><a href="index.html" class="list">Home</li></a>
+                <li class="li1"><a href="About-us.html" class="list">About Us</li></a>
+                <li class="li1"><a href="Events.html" class="list">Events</li></a>
+                <li class="li1"><a href="Gallery.html" class="list">Gallery</li></a>
+                <li class="li1"><a href="https://forms.gle/Knb945MGAbXogYUd6" target="_blank" class="list">Registration
+                </li></a>
+                <li class="li1"><a href="more.html" class="list">Featured Article</li></a>
+                <li class="li1"><a href="https://forms.gle/5V6E7f6nh7wFKTrA7"target="_blank" class="list">Volunteer</li></a>
+
+            </ul>
+        </div>
+    </div>
+    
+
+    <div class="tile-container">
+        
+        <div class="tile">
+            <img src="hackathon.jpg">
+            <div class="more-info">
+                <h1> Hackathon</h1>
+                <p>Beauty is in the eye of the beholder so who better to judge good web design aesthetics than yourself! The .HTML file is your canvas and the code is your slave. You will perform to the best of your ability and produce something that is yet to be developed. Here's your chance to challenge your inner designer in our hackathon module in both the Web and App Development.
+                </p>
+                <a href=#>Upcoming Events</a>
+            </div>  
+        </div>
+        <div class="tile">
+                <img src="quiz.jpg">
+                <div class="more-info">
+                    <h1>Quiz</h1>
+                    <p>Quizzes have always been a major source of analyzing ones talent in one’s profession, thus making an inclusion of a mega quiz, a vital part of annual ritual of ACM. Let your intellect shine, let the rolling of brain race with every passing of minute. ACM GIKI is coming up with a distinctive quiz competition for undergraduate students. The competition is going to be based on General Knowledge; the set of questions will be related to the general academic curriculum of computer science, general sciences and engineering students, to make it more practicable for participants.
+                    </p>
+                    <a href=#>Upcoming Events</a>
+                </div>  
+            </div>
+            <div class="tile">
+                    <img src="techtalks.jpg">
+                    <div class="more-info">
+                        <h1>Tech Talk</h1>
+                        <p>Want to hear the secrets for industry, or latest technology? We are inviting the most talented people from all over India to deliver lectures on the technology. What is happening now is not a secret; they will share their knowledge, their experience, and their ideas. The details of the speakers will be announced one week before the event.
+                        </p>
+                        <a href=#>Upcoming Events</a>
+                    </div>  
+                </div>
+                <div class="tile">
+                        <img src="externalevent.jpeg">
+                        <div class="more-info">
+                            <h1>External Event</h1>
+                            <p></p>We would be organizing trips to external competition who would be able to stand out in the college events. Basically, on account of amity, trips would be organized to hackathons, competitions at other colleges and many more.
+                            </p>
+                            <a href=#>Upcoming Events</a>
+                        </div>  
+                    </div>
+            
+    </div>
+    <footer>
+            <i class="fa fa-facebook-square" style="font-size:48px; color:rgb(2, 2, 56);"></i>
+            <i class="fa fa-instagram" style="font-size:48px; color:rgb(2, 2, 56);"></i>
+            <i class="fa fa-whatsapp" style="font-size:48px; color:rgb(2, 2, 56);"></i>
+    </footer> 
+    
+<script>
+    var tiles = document.querySelectorAll(".tile")
+    tiles.forEach((tile)=>
+    {
+        tile.addEventListener("click",()=>
+        {   
+            if (tile.classList.contains("active"))
+                tile.classList.toggle("active");
+            else
+            {
+                deactivateAll();
+                tile.classList.toggle("active");
+            }
+           
+
+            
+        });
+    });
+    function deactivateAll()
+    {
+        tiles.forEach((tile)=>
+        {
+            tile.classList.remove("active");
+        })
+    }
+</script>
+</body>
+
+</html>

@@ -1,0 +1,170 @@
+*{
+	box-sizing: border-box;
+	margin:0;
+	font-family: 'Dosis', sans-serif;
+}
+body{
+    animation: transition 0.4s;
+}
+@keyframes transition{
+	from{
+		opacity: 0;
+	}
+	to{
+		opacity:1;
+	}
+}
+.abt{
+    font-size: 60px;
+    color:white;
+    text-align: center;
+    padding: 150px;
+    
+}
+.both{
+	background-attachment: fixed;
+    background-image:url("23.png");
+    background-position-y: 245%;
+}
+.ul1{
+
+	width:100%; 
+	padding:0px 0px;	
+	text-align: center;
+}
+
+.li1{
+	display:inline-block;
+	color:white;
+	padding:10px 30px 10px 30px; 	
+	font-size: 17px;
+}
+.li1:hover
+{
+	background-color: rgba(52,52,52,0.90);
+}
+.last_li
+{
+	border-style:none;
+}
+.list{
+	text-decoration:none; 
+	font-family: 'Dosis', sans-serif; 
+	color: white;
+}
+.sec2
+{
+	margin-top:0px;
+	background-color: rgba(52,52,52,0.75);
+
+}
+.tile-container
+{
+	display: flex;
+	flex-grow: 0;
+	flex-shrink: 0;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	position: relative;
+	padding: 30px;
+	vertical-align: top;
+	min-height: 500px;
+	padding-top: 60px;
+}
+
+.tile{
+	cursor: pointer;
+	height: 250px;
+	vertical-align: top;
+display: inline-block;
+color: white;
+width: 250px;
+padding: 10px;
+background-color: #272a34;
+margin: 10px;
+transition: margin 0.5s ease-in-out;
+}
+.tile p
+{
+	display: inline-block;
+	line-height: 1.5;
+}
+.tile img
+{
+	width: 230px;
+	object-fit: cover;
+	height: 230px;
+}
+
+.tile .more-info
+{
+	background-color: #272a34;
+	height: 300px;
+	padding: 10px;
+	cursor:	default;
+	display: none;
+	overflow: hidden;
+	animation: PopUp 0.5s ease-in-out;
+}
+.active > .more-info
+{ 
+	padding: 30px;
+	position: absolute;
+	margin-top: 20px;
+	margin-bottom:-10px;
+	left:40px;
+	width: calc(100vw - 97px);
+	display: inline-block;
+	
+}
+
+.active
+{
+	height: 270px;
+	margin-bottom: 300px;
+	
+}
+.more-info h1
+{
+	font-weight: 300;
+	margin-bottom: 20px;
+}
+.more-info a
+{
+	position: absolute;
+	top: 250px;
+	color: white;
+    right: 45px;
+}
+
+@keyframes PopUp
+{
+	0%
+	{
+		padding-top: 0;
+		padding-bottom: 0;
+		height: 0;
+	}
+	10%{
+
+	}
+	100%
+	{
+		width: calc(100vw - 97px);
+	}
+}
+
+footer
+ {
+     font-size:30px;   
+     text-align: center; 
+
+}
+footer i{
+    color:black;
+    margin-top: calc(10vh - 15px);
+    margin-right: 20px;
+    margin-bottom: 50px;
+    cursor: pointer;
+    
+}
