@@ -52,15 +52,15 @@ body{
 
 footer
  {
-     font-size:30px;   
-     text-align: center; 
+	font-size: 30px;
+	text-align: center;
 
 }
 footer i{
     color:black;
-    margin-top: calc(10vh - 15px);
+    margin-top: calc(10vh - 15vh);
     margin-right: 20px;
-    margin-bottom: 50px;
+    margin-bottom: 100px;
     cursor: pointer;
     
 }
